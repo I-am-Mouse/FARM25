@@ -1,0 +1,128 @@
+$green: rgb(22, 76, 22);
+    @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Epilogue", sans-serif;
+}
+.flex {
+	display: -webkit-flex;
+	display: flex;
+	justify-content: space-between;
+}
+
+//HEADER
+header {
+    padding: 30px 50px 10px 30px;
+    box-shadow: 0px 0px 10px 0px;
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    article:first-child {
+        img {
+            margin-top: -10px;
+        }
+    }
+    article:nth-child(2) {
+        a {
+            text-decoration: none;
+            padding: 0px 15px 0px 15px;
+            color: black;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        a:hover {
+            color: $green;
+            font-weight: 600;
+        }
+    }
+    article:last-child {
+        display: flex;
+        p {
+            border: none;
+            background-color: $green;
+            padding: 10px 15px;
+            color: white;
+            font-size: 0.9rem;
+            border-radius: 10px;
+            margin-top: -5px;
+        }
+        img {
+            padding-left: 30px;
+            margin-top: -10px;
+            width: 70px;
+        }
+    }
+}
+//MAIN 
+main {
+    width: 80%;
+    margin: 0px auto;
+    firstSection {
+        div:first-child {
+            margin-top: 100px;
+            h1 {
+                font-size: 3.5rem;
+                max-width: 470px;
+                font-weight: 800;
+                line-height: 60px;
+                margin-bottom: 30px;
+            }
+            h4 {
+                font-size: 1rem;
+                font-weight: 500;
+                max-width: 600px;
+                margin-bottom: 30px;
+                line-height: 25px;
+            }
+            button {
+                padding: 15px 20px;
+                margin-right: 20px;
+                border-radius: 5px;
+                font-size: 1rem;
+                margin-bottom: 50px;
+            }
+            button#button-1 {
+                background-color: aqua;
+                border: none;
+            }
+            button#button-2 {
+                border: 2px solid aqua;
+            }
+            article {
+                display: flex;
+                padding-right: 50px;
+                h2 {
+                    font-size: 3rem;
+                    font-weight: 500;
+                    padding-right: 10px;
+                }
+                span {
+                    font-size: 0.8rem;
+                    max-width: 50px;
+                    line-height: 20px;
+                }
+            }
+        }
+        div:last-child {
+            // width: 70%;
+            img {
+                width: 100%;
+            }
+        }
+
+    }
+    secondSection {
+        div {
+            margin: 80px auto 0px auto;
+            text-align: center;
+            h1 {
+
+            }
+        }
+    }
+}
